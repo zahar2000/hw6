@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 245px 120px;
+  gap: 120px;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background: #e0e0da;
+  border-radius: 50px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+
+  padding: 0px;
+  gap: 82px;
+
+  width: 1110px;
+  height: 577px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.logo1 {
+  width: 137px;
+  height: 30px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+.logo22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.logo2 {
+  width: 34px;
+  height: 37px;
+}
+.logo222 {
+  display: inline-block;
+  width: 101px;
+  height: 37px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.l1 {
+  width: 465px;
+  height: 210px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 140%;
+  color: #000000;
+}
+.left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.right {
+  grid-column: 2/4;
+  width: 465px;
+  height: 465px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ffe195 0%, #ff5b5b 100%);
+  border-radius: 70px;
+}
+.right:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s;
+}
+img {
+  width: 255px;
+  height: 255px;
+}
+
+.btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 22px;
+  width: 221px;
+  height: 69px;
+  background: #ff6861;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136.7%;
+}
+/* ---------------------------------  */
+.midl {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  /* gap: 70px; */
+  width: 720px;
+  height: 442px;
+}
+.pict {
+  float: left;
+  width: 73px;
+  height: 73px;
+  grid-row: 2/4;
+  margin-right: 30px;
+}
+
+.mp1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+}
+.mp2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136.7%;
+}
+.h2 {
+  width: 512px;
+  height: 56px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  margin: auto;
+}
+.p1 {
+  margin: 10px 10px;
+}
+/* ----------------------------- */
+
+.card2 {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  padding-top: 60px;
+  padding-left: 60px;
+
+  gap: 82px;
+  width: 1110px;
+  height: 486px;
+  background: linear-gradient(102deg, #fff6df 17.38%, #ffdfde 81.25%);
+  border-radius: 60px;
+
+  width: 1110px;
+  height: 577px;
+}
+.left2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.right2 {
+  grid-column: 2/4;
+  width: 465px;
+  height: 465px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+}
+.right2:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s;
+}
+img {
+  width: 255px;
+  height: 255px;
+}
+.btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 22px;
+  width: 221px;
+  height: 69px;
+  background: #ff6861;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+/* ----------------------------- */
+
+@media screen and (max-width: 720px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 79px;
+    width: 720px;
+    height: 919px;
+    text-align: center;
+  }
+  .right {
+    order: 0;
+  }
+  .left {
+    order: 1;
+  }
+  .wrapper {
+    background: linear-gradient(#f7f6f5 17.38%, #888484 81.25%);
+    width: 760px;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 101px;
+    gap: 101px;
+    width: 720px;
+    height: 925px;
+    text-align: center;
+  }
+}
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 360px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    width: 320px;
+    height: 945px;
+    text-align: center;
+  }
+  .right {
+    order: 0;
+  }
+  .left {
+    order: 1;
+  }
+  .right {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg, #dbf8b6 0%, #23b406 100%);
+    border-radius: 70px;
+  }
+  img {
+    width: 175px;
+    height: 175px;
+  }
+  .logo1 {
+    display: none;
+  }
+  .logo22 {
+    display: flex;
+  }
+  .midl {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+  }
+  .h2 {
+    width: 320px;
+    text-align: center;
+  }
+  .p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 37px;
+    gap: 101px;
+    width: 320px;
+    height: 807px;
+    text-align: center;
+  }
+  .right2 {
+    width: 201px;
+    height: 201px;
+  }
+  .left2 {
+    width: 320px;
+  }
+  .l1 {
+    width: 320px;
+    height: 224px;
+    font-size: 38px;
+    text-align: center;
+  }
+}
+/* ------------------------ */
