@@ -259,7 +259,7 @@ img {
 }
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   .card {
     display: flex;
     flex-direction: column;
